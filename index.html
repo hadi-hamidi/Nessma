@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نسبة - هل شركتك تحتاج تمويل؟</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+    <div class="bg-texture" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <header class="nav" role="banner">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo_black.png" alt="شعار نسبة" class="nav-logo-img">
+            </div>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link" data-key="nav-services">الخدمات ▾</a></li>
+                    <li><a href="#" class="nav-link" data-key="nav_articles">المقالات ▾</a></li>
+                    <li><a href="#" class="nav-link" data-key="nav_about">من نحن</a></li>
+                    <li><a href="#" class="nav-link" data-key="nav_contact">تواصل معنا</a></li>
+                    <li><button class="nav-cta" id="top-cta" data-key="nav_get_started">ابدأ الآن</button></li>
+                    <li><button class="language-toggle" id="language-toggle">EN</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-left">
+                <h1 id="hero-heading">
+                    <span class="typing-text" data-key="hero_title">هل شركتك تحتاج تمويل لمشترياتها؟</span>
+                    <span class="light typing-text" data-key="hero_subtitle">تمويل B2B سريع ومرن</span>
+                </h1>
+                <p class="lead" data-key="hero_description">احصل على تمويل فوري لشراء المعدات والمواد التي تحتاجها شركتك</p>
+
+            </div>
+
+        </section>
+
+        <!-- Workflow Section -->
+        <section class="workflow-section">
+            <div class="workflow-container">
+                <div class="workflow-header">
+                    <div class="workflow-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#2f8a6b"/>
+                        </svg>
+                        <span data-key="workflow_badge">للموردين</span>
+                    </div>
+                    <h2 class="workflow-title" data-key="workflow_title">كيف تعمل منصة نسبة؟</h2>
+                    <p class="workflow-description" data-key="workflow_desc">قدم لمشترينك خيارات تمويل مرنة لشراء منتجاتك وخدماتك، واحصل على الدفع فوراً.</p>
+                </div>
+                
+                <div class="workflow-content">
+                    <div class="workflow-steps">
+                        <div class="workflow-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3 data-key="step1_title">اشترك في دقائق</h3>
+                                <p data-key="step1_desc">ابدأ بتقديم بعض التفاصيل عن عملك، ثم ابدأ بتقديم خيارات تمويل مرنة لمشترينك.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3 data-key="step2_title">اربط متجرك</h3>
+                                <p data-key="step2_desc">اربط متجرك الإلكتروني أو نظام إدارة المبيعات مع نسبة لتمويل مشتريات العملاء.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3 data-key="step3_title">قدم خيارات التمويل</h3>
+                                <p data-key="step3_desc">قدم لمشترينك خيارات تمويل مرنة لشراء منتجاتك وخدماتك بسهولة.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h3 data-key="step4_title">احصل على الدفع فوراً</h3>
+                                <p data-key="step4_desc">تلقى دفعاتك فوراً من نسبة، واترك إدارة التمويل والتحصيل لنا.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="workflow-visual">
+                        <div class="workflow-card">
+                            <div class="card-header">
+                                <span class="card-logo">نسبة</span>
+                            </div>
+                            <h3 class="card-title">احصل على إيرادات فورية ووفر مرونة لمشترينك</h3>
+                            <div class="card-features">
+                                <div class="card-feature">
+                                    <div class="feature-dot"></div>
+                                    <span>تسجيل سريع</span>
+                                </div>
+                                <div class="card-feature">
+                                    <div class="feature-dot"></div>
+                                    <span>موافقة فورية</span>
+                                </div>
+                                <div class="card-feature">
+                                    <div class="feature-dot"></div>
+                                    <span>دفع آمن</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="features-container">
+                <div class="features-header">
+                    <div class="features-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 21h18l-9-18-9 18z" fill="#2f8a6b"/>
+                        </svg>
+                        <span data-key="features_badge">لقيادات المبيعات</span>
+                    </div>
+                    <h2 class="features-title" data-key="features_title">لماذا تختار نسبة لتمويل مشتريات شركتك؟</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="#2f8a6b"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-headline">
+                            <span class="feature-number">50%</span> دورة مبيعات أقصر
+                        </h3>
+                        <p class="feature-description" data-key="feature1_desc">أغلق الصفقات بسرعة وزد الإيرادات مع دورة مبيعات مبسطة</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#2f8a6b"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-headline">
+                            <span class="feature-number">20%</span> عملاء جدد
+                        </h3>
+                        <p class="feature-description" data-key="feature2_desc">زد قاعدة عملائك بنسبة 20% وادفع النمو بسهولة</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#2f8a6b"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-headline">قدم المرونة</h3>
+                        <p class="feature-description" data-key="feature3_desc">قدم شروط دفع مرنة تناسب احتياجات مشترينك وتوسع عملك</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#2f8a6b"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-headline">صفر مخاطر ائتمانية</h3>
+                        <p class="feature-description" data-key="feature4_desc">نسبة تقوم بفحص سريع لا يؤثر على تقييم ائتمان عملائك</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 14l5-5 5 5z" fill="#2f8a6b"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-headline">
+                            <span class="feature-number">85%</span> معدل الموافقة
+                        </h3>
+                        <p class="feature-description" data-key="feature5_desc">نسبة تقوم بفحص سريع لا يؤثر على تقييم ائتمان عملائك</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z" fill="#2f8a6b"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-headline">
+                            <span class="feature-number">1.3x</span> زيادة في حجم الطلب
+                        </h3>
+                        <p class="feature-description" data-key="feature6_desc">نسبة تقوم بفحص سريع لا يؤثر على تقييم ائتمان عملائك</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works for Suppliers -->
+        <section class="suppliers-section">
+            <div class="suppliers-container">
+                <div class="suppliers-header">
+                    <div class="suppliers-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6h-2l-2-2H8L6 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" fill="#2f8a6b"/>
+                        </svg>
+                        <span data-key="suppliers_badge">للموردين</span>
+                    </div>
+                    <h2 class="suppliers-title" data-key="suppliers_title">كيف يعمل للموردين</h2>
+                    <p class="suppliers-description" data-key="suppliers_desc">نفهم مدى أهمية مرحلة الدفع ونتأكد من أن عملاءك يحصلون على أفضل تجربة ممكنة.</p>
+                </div>
+                
+                <div class="suppliers-content">
+                    <div class="suppliers-steps">
+                        <ul class="steps-list">
+                            <li class="step-item active">
+                                <h3 data-title-id="financing">مشتركك يقدم الطلب</h3>
+                            </li>
+                            <li class="step-item">
+                                <h3 data-title-id="decision">يتم الموافقة في يوم واحد</h3>
+                            </li>
+                            <li class="step-item">
+                                <h3 data-title-id="terms">يختار فترة الدفع</h3>
+                            </li>
+                            <li class="step-item">
+                                <h3 data-title-id="method">يختار طريقة الدفع</h3>
+                            </li>
+                            <li class="step-item">
+                                <h3 data-title-id="purchase">يكمل الطلب</h3>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="suppliers-visual">
+                        <div class="suppliers-card">
+                            <div class="approval-badge">معدل موافقة 85%</div>
+                            <div class="suppliers-card-inner">
+                                <h3>قدم المعلومات</h3>
+                                <div class="info-sections">
+                                    <div class="info-section">
+                                        <div class="info-icon">📄</div>
+                                        <div class="info-content">
+                                            <h4>رخصة تجارية</h4>
+                                            <p>ارفع رخصة التجارة الخاصة بك</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-section">
+                                        <div class="info-icon">🏦</div>
+                                        <div class="info-content">
+                                            <h4>كشف حساب بنكي</h4>
+                                            <p>قدم أحدث كشف حساب بنكي للستة أشهر الماضية</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-section">
+                                        <div class="info-icon">👤</div>
+                                        <div class="info-content">
+                                            <h4>معلومات المالك</h4>
+                                            <p>ستحتاج لاسم مالك العمل وتاريخ الميلاد والهوية الإماراتية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="continue-btn">متابعة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works for Buyers -->
+        <section class="buyers-section">
+            <div class="buyers-container">
+                <div class="buyers-header">
+                    <div class="buyers-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#2f8a6b"/>
+                        </svg>
+                        <span data-key="buyers_badge">للمشترين</span>
+                    </div>
+                    <h2 class="buyers-title" data-key="buyers_title">كيف يعمل للمشترين</h2>
+                    <p class="buyers-description" data-key="buyers_desc">نفهم مدى أهمية مرحلة الدفع ونتأكد من أن عملاءك يحصلون على أفضل تجربة ممكنة.</p>
+                </div>
+                <div class="buyers-content">
+                    <div class="buyers-steps">
+                        <ul class="steps-list">
+                            <li class="buyer-step active">
+                                <h3 data-title-id="application">مشتركك يقدم الطلب</h3>
+                            </li>
+                            <li class="buyer-step">
+                                <h3 data-title-id="approval">يتم الموافقة في يوم واحد</h3>
+                            </li>
+                            <li class="buyer-step">
+                                <h3 data-title-id="terms">يختار فترة الدفع</h3>
+                            </li>
+                            <li class="buyer-step">
+                                <h3 data-title-id="method">يختار طريقة الدفع</h3>
+                            </li>
+                            <li class="buyer-step">
+                                <h3 data-title-id="complete">يكمل الطلب</h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="buyers-visual">
+                        <div class="buyers-card">
+                            <div class="approval-badge">معدل موافقة 85%</div>
+                            <div class="buyers-card-inner">
+                                <h3>قدم المعلومات</h3>
+                                <div class="info-sections">
+                                    <div class="info-section">
+                                        <div class="info-icon">📄</div>
+                                        <div class="info-content">
+                                            <h4>رخصة تجارية</h4>
+                                            <p>ارفع رخصة التجارة الخاصة بك</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-section">
+                                        <div class="info-icon">🏦</div>
+                                        <div class="info-content">
+                                            <h4>كشف حساب بنكي</h4>
+                                            <p>قدم أحدث كشف حساب بنكي للستة أشهر الماضية</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-section">
+                                        <div class="info-icon">👤</div>
+                                        <div class="info-content">
+                                            <h4>معلومات المالك</h4>
+                                            <p>ستحتاج لاسم مالك العمل وتاريخ الميلاد والهوية الإماراتية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="continue-btn">متابعة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="final-cta-background">
+                <img src="Background2.png" alt="خلفية CTA" class="final-cta-bg-img">
+            </div>
+            <div class="final-cta-container">
+                <div class="final-cta-content">
+                    <h2 class="final-cta-title">
+                        <span data-key="cta_title">حسّن تدفقك النقدي.</span>
+                        <span class="final-cta-highlight" data-key="cta_highlight">اليوم.</span>
+                    </h2>
+                    <p class="final-cta-description" data-key="cta_description">
+                        نساعد الشركات في الإمارات على إبرام المزيد من الصفقات وجمع الإيرادات بشكل أسرع من خلال تقديم شروط ائتمانية خالية من المخاطر.
+                    </p>
+                    <div class="final-cta-button-container">
+                        <a href="/get-started" class="final-cta-button" data-key="cta_button">
+                            ابدأ الآن
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4 data-key="footer_resources">الموارد</h4>
+                            <ul>
+                                <li><a href="#" data-key="footer_help_center">مركز المساعدة</a></li>
+                                <li><a href="#" data-key="footer_case_studies">دراسات الحالة</a></li>
+                                <li><a href="#" data-key="footer_blog">المدونة</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4 data-key="footer_about">من نحن</h4>
+                            <ul>
+                                <li><a href="#" data-key="footer_about_us">من نحن</a></li>
+                                <li><a href="#" data-key="footer_contact_us">تواصل معنا</a></li>
+                                <li><a href="#" data-key="footer_careers">الوظائف</a></li>
+                                <li><a href="#" data-key="footer_terms">شروط العملاء</a></li>
+                                <li><a href="#" data-key="footer_privacy">سياسة الخصوصية</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4 data-key="footer_suppliers">للموردين</h4>
+                            <ul>
+                                <li><a href="#" data-key="footer_buy_now_pay_later">اشتر الآن، ادفع لاحقاً</a></li>
+                                <li><a href="#" data-key="footer_invoice_discounting">خصم الفواتير</a></li>
+                                <li><a href="#" data-key="footer_installments">التقسيط</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4 data-key="footer_buyers">للمشترين</h4>
+                            <ul>
+                                <li><a href="#" data-key="footer_dealer_financing">تمويل التجار</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <div class="contact-info">
+                        <p>support@nsbh.co&nbsp; · &nbsp;+971 54 247 0392&nbsp;· &nbsp;21st floor, Mashreq Bank Global HQ, Downtown, Dubai, UAE</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://x.com/Getnsbh" target="_blank" class="social-link" rel="noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.99512 4.7998L12.6338 10.0938L17.1875 4.7998H18.4307L13.1855 10.8975L18.8906 19.2002H14.6943L10.8525 13.6084L6.04297 19.2002H4.7998L10.3008 12.8057L4.7998 4.7998H8.99512ZM6.49121 5.73535L10.9258 12.0791L11.4834 12.876L15.2793 18.3066H17.1885L12.5361 11.6523L11.9785 10.8545L8.40039 5.73535H6.49121Z" fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/getnsbh/" target="_blank" class="social-link" rel="noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.58021 3.64406C5.22883 3.91817 3.99546 5.17547 3.70268 6.57743C3.5659 7.23258 3.5659 16.7784 3.70268 17.4336C3.96005 18.666 4.84767 19.702 6.08781 20.2174C6.3779 20.338 6.68895 20.4001 7.00309 20.4001H12.0199H17.0593C17.3587 20.4001 17.6552 20.3426 17.9329 20.2306C19.0635 19.7748 19.9085 18.8743 20.2615 17.7492C20.3998 17.3081 20.4001 17.2984 20.4001 12.0055C20.4001 6.71263 20.3998 6.7029 20.2615 6.26184C19.9112 5.14542 19.056 4.23269 17.9381 3.78241C17.657 3.66913 17.3568 3.61063 17.0537 3.61007L12.1768 3.60101C9.24217 3.59558 6.72371 3.61496 6.58021 3.64406ZM18.0057 5.37037C18.458 5.56036 18.7535 6.16369 18.6427 6.67097C18.5914 6.90576 18.2896 7.27134 18.0399 7.40117C17.64 7.60914 17.0022 7.46776 16.6974 7.10351C16.2411 6.5583 16.4288 5.69518 17.0669 5.40376C17.3737 5.26371 17.7223 5.25127 18.0057 5.37037ZM13.1096 6.70385C14.0701 6.9033 14.9528 7.36677 15.6747 8.05065C16.4993 8.83172 16.9703 9.63571 17.2704 10.7747C17.4192 11.3396 17.4192 12.6714 17.2704 13.2363C16.9658 14.3922 16.4927 15.1924 15.6458 15.9835C14.6159 16.9458 13.4497 17.402 12.0199 17.402C10.5901 17.402 9.42383 16.9458 8.39391 15.9835C7.85852 15.4833 7.54158 15.0758 7.26305 14.5297C6.79583 13.6134 6.65742 13.0364 6.65742 12.0055C6.65742 10.9746 6.79583 10.3976 7.26305 9.48133C7.95933 8.11597 9.37091 7.0361 10.8887 6.70783C11.4391 6.58879 12.546 6.58677 13.1096 6.70385ZM11.2352 9.00062C10.4356 9.23504 9.87869 9.63356 9.45126 10.2772C8.43277 11.8107 8.99327 13.9796 10.6144 14.7777C11.5487 15.2377 12.4911 15.2377 13.4254 14.7777C15.0465 13.9796 15.607 11.8107 14.5885 10.2772C13.8543 9.17167 12.461 8.64123 11.2352 9.00062Z" fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@getnsbh" target="_blank" class="social-link" rel="noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.snapchat.com/@getnsbh?invite_id=EoT_shGu&locale=en_TN&share_id=vWxJN7weR-eHAVIARA5E8Q&sid=48cc7ad0d43c434198e47966bac24896" target="_blank" class="social-link" rel="noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.118 0c-1.297 0-2.448-.49-3.323-1.297-.807-.875-1.297-2.026-1.297-3.323s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-brand">
+                        <img src="logo_black.png" alt="شعار نسبة" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="footer-logo-text" style="display:none;">نسبة</span>
+                    </div>
+                    <div class="footer-copyright">
+                        <p data-key="footer_copyright">&copy; 2025 نسبة. جميع الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
